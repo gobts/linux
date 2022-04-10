@@ -297,10 +297,13 @@ static const struct sunxi_ccu_desc sun6i_rtc_ccu_desc = {
 	.hw_clks	= &sun6i_rtc_ccu_hw_clks,
 };
 
+<<<<<<< HEAD
 static const struct clk_parent_data sun50i_h6_osc32k_fanout_parents[] = {
 	{ .hw = &osc32k_clk.common.hw },
 };
 
+=======
+>>>>>>> e614df26ad324c1907ed1c8a8b666f7eb88f882f
 static const struct clk_parent_data sun50i_h616_osc32k_fanout_parents[] = {
 	{ .hw = &osc32k_clk.common.hw },
 	{ .fw_name = "pll-32k" },
@@ -313,6 +316,7 @@ static const struct clk_parent_data sun50i_r329_osc32k_fanout_parents[] = {
 	{ .hw = &osc24M_32k_clk.common.hw }
 };
 
+<<<<<<< HEAD
 static const struct sun6i_rtc_match_data sun50i_h6_rtc_ccu_data = {
 	.have_ext_osc32k	= true,
 	.have_iosc_calibration	= true,
@@ -320,6 +324,8 @@ static const struct sun6i_rtc_match_data sun50i_h6_rtc_ccu_data = {
 	.osc32k_fanout_nparents	= ARRAY_SIZE(sun50i_h6_osc32k_fanout_parents),
 };
 
+=======
+>>>>>>> e614df26ad324c1907ed1c8a8b666f7eb88f882f
 static const struct sun6i_rtc_match_data sun50i_h616_rtc_ccu_data = {
 	.have_iosc_calibration	= true,
 	.rtc_32k_single_parent	= true,
@@ -335,10 +341,13 @@ static const struct sun6i_rtc_match_data sun50i_r329_rtc_ccu_data = {
 
 static const struct of_device_id sun6i_rtc_ccu_match[] = {
 	{
+<<<<<<< HEAD
 		.compatible	= "allwinner,sun50i-h6-rtc",
 		.data		= &sun50i_h6_rtc_ccu_data,
 	},
 	{
+=======
+>>>>>>> e614df26ad324c1907ed1c8a8b666f7eb88f882f
 		.compatible	= "allwinner,sun50i-h616-rtc",
 		.data		= &sun50i_h616_rtc_ccu_data,
 	},
