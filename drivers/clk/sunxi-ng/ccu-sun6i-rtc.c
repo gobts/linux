@@ -297,6 +297,7 @@ static const struct sunxi_ccu_desc sun6i_rtc_ccu_desc = {
 	.hw_clks	= &sun6i_rtc_ccu_hw_clks,
 };
 
+
 static const struct clk_parent_data sun50i_h6_osc32k_fanout_parents[] = {
 	{ .hw = &osc32k_clk.common.hw },
 };
